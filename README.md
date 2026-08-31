@@ -12,6 +12,16 @@ types.
 The lens renders on the same line as C# Dev Kit's own "N references" lens, so you
 get a combined `N references | N implementations` row.
 
+![The implementations CodeLens on an interface](images/showcase-row.png)
+
+**Before** — C# Dev Kit alone, references only:
+
+![Without the extension](images/showcase-previous.png)
+
+Clicking the lens opens Peek with the implementing types:
+
+![Peek view of implementations](images/showcase-peek.png)
+
 ## Requirements
 
 - **C# Dev Kit** (`ms-dotnettools.csdevkit`) installed and working on your solution.

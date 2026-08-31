@@ -5,6 +5,11 @@
   "version": "0.0.1",
   "publisher": "FelipeVillaJaramillo",
   "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1E1E1E",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/felipe/csharp-implementations-codelens"

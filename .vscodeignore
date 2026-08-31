@@ -11,3 +11,5 @@ plan-*.md
 pnpm-lock.yaml
 pnpm-workspace.yaml
 .npmrc
+images/**
+!images/icon.png
