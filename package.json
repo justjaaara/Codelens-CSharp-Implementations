@@ -1,0 +1,66 @@
+{
+  "name": "csharp-implementations-codelens",
+  "displayName": "C# Implementations CodeLens",
+  "description": "Inline \"N implementations\" CodeLens above C# interfaces, classes, and overridable members, backed by C# Dev Kit's implementation data.",
+  "version": "0.0.1",
+  "publisher": "FelipeVillaJaramillo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felipe/csharp-implementations-codelens"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "csharp",
+    "codelens",
+    "implementations",
+    "code vision",
+    "rider"
+  ],
+  "activationEvents": [
+    "onLanguage:csharp"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "C# Implementations CodeLens",
+      "properties": {
+        "csharpImplementationsCodeLens.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the \"N implementations\" CodeLens on C# symbols."
+        },
+        "csharpImplementationsCodeLens.minCount": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0,
+          "description": "Hide the CodeLens when the implementation count is below this value."
+        },
+        "csharpImplementationsCodeLens.maxFileLines": {
+          "type": "number",
+          "default": 2000,
+          "minimum": 0,
+          "description": "Skip files with more lines than this (performance guard)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "node esbuild.js --production",
+    "check-types": "tsc --noEmit",
+    "vscode:prepublish": "pnpm run package"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/vscode": "^1.90.0",
+    "esbuild": "^0.23",
+    "typescript": "^5.5"
+  }
+}
