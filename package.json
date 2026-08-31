@@ -12,7 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/felipe/csharp-implementations-codelens"
+    "url": "https://github.com/justjaaara/Codelens-CSharp-Implementations.git"
+  },
+  "homepage": "https://github.com/justjaaara/Codelens-CSharp-Implementations#readme",
+  "bugs": {
+    "url": "https://github.com/justjaaara/Codelens-CSharp-Implementations/issues"
   },
   "engines": {
     "vscode": "^1.90.0"
