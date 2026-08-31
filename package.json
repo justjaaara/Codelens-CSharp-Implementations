@@ -2,7 +2,7 @@
   "name": "Codelens-CSharp-Implementations-For-VSCODE",
   "displayName": "C# Implementations CodeLens (Dev Kit)",
   "description": "Inline \"N implementations\" CodeLens above C# interfaces, classes, and overridable members, backed by C# Dev Kit's implementation data.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "FelipeVillaJaramillo",
   "license": "MIT",
   "icon": "images/icon.png",
