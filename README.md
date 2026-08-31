@@ -51,6 +51,10 @@ wait for C# Dev Kit to finish loading before the counts appear.
   arrive.
 - The declaration itself is excluded from the count (an interface with two
   implementers shows `2`, not `3`).
+- Implementation lookups are cached per symbol, so scrolling within a file costs
+  nothing. The cache is dropped when any C# file is saved, created, or deleted,
+  when the settings change, or after 60 seconds. Empty results are never cached
+  (they usually mean the language service is still warming up).
 
 ## License
 
